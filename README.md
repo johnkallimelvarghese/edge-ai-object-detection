@@ -191,7 +191,7 @@ This reflects realistic **edge deployment conditions**.
 
 ---
 
-## 📄 License
+
 
 ## 📄 License
 
