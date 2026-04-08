@@ -1,6 +1,6 @@
 # Edge AI Object Detection (NanoDet vs RT-DETR Performance Comparison)
 
-A real-time object detection system designed for edge devices, comparing lightweight CNN and transformer-based models for industrial defect detection.
+A real-time object detection system designed for edge devices, comparing lightweight CNN and transformer-based models for object detection.
 
 ## Overview
 
