@@ -18,6 +18,12 @@ The focus is on:
 
 This project focuses on understanding real-world deployment challenges, including dependency conflicts, model debugging, and performance optimization on CPU-only systems.
 
+
+## ⚠️ Note
+
+The `nanodet/` directory contains the official NanoDet repository (https://github.com/RangiLyu/nanodet), used and adapted for this project.
+
+
 ## My Contribution
 
 
