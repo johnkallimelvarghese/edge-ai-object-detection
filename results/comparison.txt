@@ -1,0 +1,68 @@
+Model Comparison: NanoDet vs RT-DETR
+
+Quick Comparison:
+
+Model        FPS     Latency     Type
+-----------------------------------------
+NanoDet      ~8      ~125 ms     CNN
+RT-DETR 640  ~2.4    ~410 ms     Transformer
+RT-DETR 320  ~3.9    ~260 ms     Transformer
+
+
+----------------------------------------
+NanoDet (320x320)
+----------------------------------------
+- FPS: ~8 FPS
+- Latency: ~123–128 ms
+- Model Size: 34 MB
+- Type: CNN-based
+
+Strengths:
+- Fast inference
+- Lightweight and efficient
+- Suitable for edge deployment
+
+Limitations:
+- Moderate accuracy
+- May miss small or complex objects
+
+
+----------------------------------------
+RT-DETR (640x640)
+----------------------------------------
+- FPS: ~2.4 FPS
+- Latency: ~405–411 ms
+- Type: Transformer-based
+
+Strengths:
+- Better contextual understanding
+- Higher detection accuracy
+- Detects more objects in scene
+
+Limitations:
+- Very slow on CPU
+- Not suitable for real-time edge deployment
+
+
+----------------------------------------
+RT-DETR (320x320)
+----------------------------------------
+- FPS: ~3.8–3.9 FPS
+- Latency: ~255–261 ms
+
+Improvements:
+- ~70% faster than 640 resolution
+- Reduced latency significantly
+
+Trade-offs:
+- Lower confidence for small objects
+- Slight drop in detection quality
+
+
+----------------------------------------
+Final Conclusion
+----------------------------------------
+
+- NanoDet is best suited for real-time edge applications where speed is critical.
+- RT-DETR is better suited for accuracy-focused applications where computational resources are available.
+- Input resolution plays a major role in balancing speed vs accuracy.

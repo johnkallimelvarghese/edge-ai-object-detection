@@ -1,0 +1,60 @@
+NanoDet Performance Metrics (CPU)
+
+Model:
+- NanoDet-Plus (320 input)
+- Model Size: 34 MB
+
+Performance:
+- Average FPS: ~8 FPS
+- Latency: ~123–128 ms
+
+Analysis:
+- Stable performance across frames (low variance)
+- Suitable for CPU-based edge inference
+- Not suitable for high-speed real-time (30 FPS requirement)
+
+Architecture Insight:
+- CNN-based detector optimized for efficiency
+- Trades accuracy for speed
+
+Conclusion:
+NanoDet is suitable for edge deployment where computational efficiency is prioritized over high accuracy.
+
+
+
+RT-DETR Performance Metrics (CPU)
+
+----------------------------------------
+Model: RT-DETR (rtdetr-l)
+Device: CPU
+----------------------------------------
+
+RT-DETR (640x640):
+- Average FPS: ~2.4 FPS
+- Latency: ~405–411 ms
+
+RT-DETR (320x320):
+- Average FPS: ~3.8–3.9 FPS
+- Latency: ~255–261 ms
+
+
+Analysis:
+- Reducing input size from 640 → 320 improved performance by ~70%
+- Latency reduced by ~150 ms
+- Smaller resolution leads to faster inference
+
+
+Observations:
+- Stable performance across frames (low variance)
+- Transformer-based model has high computational cost
+- Higher resolution provides better detection quality
+- Lower resolution reduces confidence for small objects
+
+Use Case Recommendation:
+
+- NanoDet → Edge / real-time systems
+- RT-DETR → Accuracy-critical applications
+
+
+Conclusion:
+RT-DETR provides better contextual understanding and detection accuracy compared to lightweight models, but at the cost of significantly higher latency. Reducing input size improves speed but introduces accuracy trade-offs.
