@@ -80,6 +80,7 @@ edge-ai-defect/
 ### 🔹 NanoDet (Recommended Setup)
 
 > ⚠️ Tested on: **Apple MacBook Air (M4, CPU-only inference)**
+
 > ⚠️ Python 3.9.18 is required for compatibility
 > Python version and dependency versions are important to avoid known issues.
 
