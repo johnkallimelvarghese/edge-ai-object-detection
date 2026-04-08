@@ -81,6 +81,25 @@ edge-ai-defect/
 | RT-DETR (640x640) | ~2.4 FPS | ~410ms | Transformer | Accuracy-critical |
 | RT-DETR (320x320) | ~3.9 FPS | ~260ms | Transformer | Balanced performance |
 
+
+
+## 📊 Performance Visualization
+
+### Model Comparison (320x320)
+
+![Model Comparison](results/model_comparison_320.png)
+
+NanoDet achieves significantly higher FPS compared to RT-DETR at the same resolution, making it more suitable for real-time edge deployment.
+
+---
+
+### RT-DETR: Resolution Impact
+
+![RT-DETR Resolution](results/rtdetr_resolution.png)
+
+RT-DETR shows a noticeable drop in FPS as input resolution increases, highlighting the trade-off between accuracy and inference speed.
+
+
 ## Quick Start
 
 ### 🔹 NanoDet (Recommended Setup)
